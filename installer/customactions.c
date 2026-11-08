@@ -30,8 +30,8 @@ const IMAGE_LOAD_CONFIG_DIRECTORY _load_config_used = {
 	.GuardFlags = IMAGE_GUARD_SECURITY_COOKIE_UNUSED
 };
 
-#define MANAGER_SERVICE_NAME TEXT("WireGuardManager")
-#define TUNNEL_SERVICE_PREFIX TEXT("WireGuardTunnel$")
+#define MANAGER_SERVICE_NAME TEXT("HiddenWGManager")
+#define TUNNEL_SERVICE_PREFIX TEXT("HiddenWGTunnel$")
 
 enum log_level { LOG_LEVEL_INFO, LOG_LEVEL_WARN, LOG_LEVEL_ERR, LOG_LEVEL_MSIERR };
 

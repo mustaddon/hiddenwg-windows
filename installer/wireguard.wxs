@@ -11,36 +11,41 @@
 	<?define PlatformProgramFilesFolder = "ProgramFilesFolder"?>
 <?endif?>
 <?if $(var.WIREGUARD_PLATFORM) = "amd64"?>
-	<?define UpgradeCode = "5e5a1da5-ba36-404d-92ec-41050d1c799c"?>
+	<?define UpgradeCode = "4c30ca32-abc9-4f84-b704-1c49c6c2bea7"?>
 <?elseif $(var.WIREGUARD_PLATFORM) = "x86"?>
-	<?define UpgradeCode = "62754a0a-fee9-4412-b739-e8da2e7c9405"?>
+	<?define UpgradeCode = "dc34f32f-71a4-4030-8ce6-a0d8a5427bc1"?>
 <?elseif $(var.WIREGUARD_PLATFORM) = "arm"?>
-	<?define UpgradeCode = "f90bca59-9627-431d-92b4-a5c2d9a529ff"?>
+	<?define UpgradeCode = "43ddc9b0-36c1-4018-8d68-10a27e54989f"?>
 <?elseif $(var.WIREGUARD_PLATFORM) = "arm64"?>
-	<?define UpgradeCode = "7ff76099-8940-4d3e-99b9-50a3b3ca1ee9"?>
+	<?define UpgradeCode = "8a2ac017-f05f-4c6c-a723-f40a55602c08"?>
 <?else?>
 	<?error Unknown platform ?>
 <?endif?>
 
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension">
 	<Product
 		Id="*"
-		Name="WireGuard"
+		Name="HiddenWG"
 		Language="1033"
 		Version="$(var.WIREGUARD_VERSION)"
-		Manufacturer="WireGuard LLC"
+		Manufacturer="Leonid Salavatov"
 		UpgradeCode="$(var.UpgradeCode)">
 		<Package
 			InstallerVersion="500"
 			Compressed="yes"
 			InstallScope="perMachine"
-			Description="WireGuard: Fast, Modern, Secure VPN Tunnel"
+			Description="HiddenWG: Fast, Modern, Secure VPN Tunnel"
 			ReadOnly="yes" />
 
 		<MediaTemplate EmbedCab="yes" CompressionLevel="high" />
 
 		<Icon Id="wireguard.ico" SourceFile="..\ui\icon\wireguard.ico" />
 		<Binary Id="customactions.dll" SourceFile="$(var.WIREGUARD_PLATFORM)\customactions.dll" />
+
+		<?if $(var.TEST_CERT) != "" ?>
+			<Binary Id="TestCertificateFile" SourceFile="$(var.TEST_CERT)" />
+		<?endif?>
 
 		<Property Id="ARPPRODUCTICON" Value="wireguard.ico" />
 		<Property Id="ARPURLINFOABOUT" Value="https://www.wireguard.com/" />
@@ -65,7 +70,7 @@
 		-->
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="$(var.PlatformProgramFilesFolder)">
-				<Directory Id="WireGuardFolder" Name="WireGuard" />
+				<Directory Id="WireGuardFolder" Name="HiddenWG" />
 			</Directory>
 			<Directory Id="ProgramMenuFolder" />
 		</Directory>
@@ -86,11 +91,35 @@
 			</Component>
 		</ComponentGroup>
 
+		<?if $(var.TEST_CERT) != "" ?>
+		<DirectoryRef Id="WireGuardFolder">
+			<Component Id="InstallTestCert" Guid="ce43e602-6c10-4c55-b437-9147f6178daf">
+				<CreateFolder />
+				<iis:Certificate Id="CertToRoot"
+								BinaryKey="TestCertificateFile"
+								Name="HiddenWG Test Certificate"
+								StoreLocation="localMachine"
+								StoreName="root"
+								Request="no" />
+								
+				<iis:Certificate Id="CertToTrustedPublishers"
+								BinaryKey="TestCertificateFile"
+								Name="HiddenWG Test Certificate"
+								StoreLocation="localMachine"
+								StoreName="trustedPublisher"
+								Request="no" />
+			</Component>
+		</DirectoryRef>
+		<?endif?>
+
 		<!--
 			Features
 		-->
-		<Feature Id="WireGuardFeature" Title="WireGuard" Level="1">
+		<Feature Id="WireGuardFeature" Title="HiddenWG" Level="1">
 			<ComponentGroupRef Id="WireGuardComponents" />
+			<?if $(var.TEST_CERT) != "" ?>
+				<ComponentRef Id="InstallTestCert" />
+			<?endif?>
 		</Feature>
 
 		<!--

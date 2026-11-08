@@ -22,5 +22,5 @@ func Arch() string {
 }
 
 func UserAgent() string {
-	return fmt.Sprintf("WireGuard/%s (%s; %s)", Number, OsName(), Arch())
+	return fmt.Sprintf("HiddenWG/%s (%s; %s)", Number, OsName(), Arch())
 }
