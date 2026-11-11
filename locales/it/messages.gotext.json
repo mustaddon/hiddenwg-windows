@@ -68,7 +68,7 @@
         {
             "id": "You must use the native version of WireGuard on this computer.",
             "message": "You must use the native version of WireGuard on this computer.",
-            "translation": "Devi usare la versione nativa di WireGuard su questo computer.",
+            "translation": "Devi usare la versione nativa di HiddenWG su questo computer.",
             "translatorComment": "Copied from source."
         },
         {
@@ -90,7 +90,7 @@
         {
             "id": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
             "message": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard può essere utilizzato solo dagli utenti membri del gruppo {AdminGroupName} di sistema.",
+            "translation": "HiddenWG può essere utilizzato solo dagli utenti membri del gruppo {AdminGroupName} di sistema.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -106,7 +106,7 @@
         {
             "id": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
             "message": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard è in esecuzione, ma l'interfaccia utente è accessibile solo dai desktop del gruppo {AdminGroupName} di sistema.",
+            "translation": "HiddenWG è in esecuzione, ma l'interfaccia utente è accessibile solo dai desktop del gruppo {AdminGroupName} di sistema.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -122,7 +122,7 @@
         {
             "id": "WireGuard system tray icon did not appear after 30 seconds.",
             "message": "WireGuard system tray icon did not appear after 30 seconds.",
-            "translation": "L'icona della barra delle applicazioni di WireGuard non è apparsa dopo 30 secondi.",
+            "translation": "L'icona della barra delle applicazioni di HiddenWG non è apparsa dopo 30 secondi.",
             "translatorComment": "Copied from source."
         },
         {
@@ -537,13 +537,13 @@
         {
             "id": "About WireGuard",
             "message": "About WireGuard",
-            "translation": "Informazioni su WireGuard",
+            "translation": "Informazioni su HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "WireGuard logo image",
             "message": "WireGuard logo image",
-            "translation": "Immagine del logo di WireGuard",
+            "translation": "Immagine del logo di HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
@@ -1033,7 +1033,7 @@
         {
             "id": "\u0026About WireGuard…",
             "message": "\u0026About WireGuard…",
-            "translation": "Inform\u0026azioni su WireGuard…",
+            "translation": "Inform\u0026azioni su HiddenWG…",
             "translatorComment": "Copied from source."
         },
         {
@@ -1077,13 +1077,13 @@
         {
             "id": "WireGuard Detection Error",
             "message": "WireGuard Detection Error",
-            "translation": "Errore di rilevamento di WireGuard",
+            "translation": "Errore di rilevamento di HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to wait for WireGuard window to appear: {Err}",
             "message": "Unable to wait for WireGuard window to appear: {Err}",
-            "translation": "Impossibile attendere la comparsa della finestra di WireGuard: {Err}",
+            "translation": "Impossibile attendere la comparsa della finestra di HiddenWG: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1099,7 +1099,7 @@
         {
             "id": "WireGuard: Deactivated",
             "message": "WireGuard: Deactivated",
-            "translation": "WireGuard: disattivato",
+            "translation": "HiddenWG: disattivato",
             "translatorComment": "Copied from source."
         },
         {
@@ -1141,7 +1141,7 @@
         {
             "id": "WireGuard Activated",
             "message": "WireGuard Activated",
-            "translation": "WireGuard attivato",
+            "translation": "HiddenWG attivato",
             "translatorComment": "Copied from source."
         },
         {
@@ -1163,7 +1163,7 @@
         {
             "id": "WireGuard Deactivated",
             "message": "WireGuard Deactivated",
-            "translation": "WireGuard disattivato",
+            "translation": "HiddenWG disattivato",
             "translatorComment": "Copied from source."
         },
         {
@@ -1185,14 +1185,13 @@
         {
             "id": "WireGuard Tunnel Error",
             "message": "WireGuard Tunnel Error",
-            "translation": "Errore tunnel di WireGuard",
+            "translation": "Errore tunnel di HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGuard: {TextForStateglobalState_true}",
-            "message": "WireGuard: {TextForStateglobalState_true}",
-            "translation": "WireGuard: {TextForStateglobalState_true}",
-            "translatorComment": "Copied from source.",
+            "id": "HiddenWG: {TextForStateglobalState_true}",
+            "message": "HiddenWG: {TextForStateglobalState_true}",
+            "translation": "",
             "placeholders": [
                 {
                     "id": "TextForStateglobalState_true",
@@ -1245,13 +1244,13 @@
         {
             "id": "WireGuard Update Available",
             "message": "WireGuard Update Available",
-            "translation": "Aggiornamento di WireGuard disponibile",
+            "translation": "Aggiornamento di HiddenWG disponibile",
             "translatorComment": "Copied from source."
         },
         {
             "id": "An update to WireGuard is now available. You are advised to update as soon as possible.",
             "message": "An update to WireGuard is now available. You are advised to update as soon as possible.",
-            "translation": "Un aggiornamento di WireGuard è disponibile. Ti consigliamo di aggiornare il prima possibile.",
+            "translation": "Un aggiornamento di HiddenWG è disponibile. Ti consigliamo di aggiornare il prima possibile.",
             "translatorComment": "Copied from source."
         },
         {
@@ -1645,31 +1644,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "{Title} (unsigned build, no updates)",
-            "message": "{Title} (unsigned build, no updates)",
-            "translation": "{Title} (versione non firmata, nessun aggiornamento)",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Title",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "mtw.Title()"
-                }
-            ]
-        },
-        {
             "id": "Error Exiting WireGuard",
             "message": "Error Exiting WireGuard",
-            "translation": "Errore durante la chiusura di WireGuard",
+            "translation": "Errore durante la chiusura di HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to exit service due to: {Err}. You may want to stop WireGuard from the service manager.",
             "message": "Unable to exit service due to: {Err}. You may want to stop WireGuard from the service manager.",
-            "translation": "Impossibile uscire dal servizio a causa di: {Err}. Potresti voler interrompere WireGuard dal gestore dei servizi.",
+            "translation": "Impossibile uscire dal servizio a causa di: {Err}. Potresti voler interrompere HiddenWG dal gestore dei servizi.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1685,7 +1668,7 @@
         {
             "id": "An update to WireGuard is available. It is highly advisable to update without delay.",
             "message": "An update to WireGuard is available. It is highly advisable to update without delay.",
-            "translation": "Un aggiornamento di WireGuard è disponibile. Ti consigliamo vivamente di aggiornare immediatamente.",
+            "translation": "Un aggiornamento di HiddenWG è disponibile. Ti consigliamo vivamente di aggiornare immediatamente.",
             "translatorComment": "Copied from source."
         },
         {

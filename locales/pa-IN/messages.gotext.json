@@ -68,7 +68,7 @@
         {
             "id": "You must use the native version of WireGuard on this computer.",
             "message": "You must use the native version of WireGuard on this computer.",
-            "translation": "ਤੁਹਾਨੂੰ ਇਸ ਕੰਪਿਊਟਰ ਉੱਤੇ WireGuard ਦਾ ਨੇਟਿਵ ਵਰਜ਼ਨ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।",
+            "translation": "ਤੁਹਾਨੂੰ ਇਸ ਕੰਪਿਊਟਰ ਉੱਤੇ HiddenWG ਦਾ ਨੇਟਿਵ ਵਰਜ਼ਨ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।",
             "translatorComment": "Copied from source."
         },
         {
@@ -90,7 +90,7 @@
         {
             "id": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
             "message": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard ਨੂੰ ਸਿਰਫ਼ ਉਹੀ ਵਰਤੋਂਕਾਰ ਵਰਤ ਸਕਦੇ ਹਨ, ਜੋ ਕਿ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਮੈਂਬਰ ਹਨ।",
+            "translation": "HiddenWG ਨੂੰ ਸਿਰਫ਼ ਉਹੀ ਵਰਤੋਂਕਾਰ ਵਰਤ ਸਕਦੇ ਹਨ, ਜੋ ਕਿ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਮੈਂਬਰ ਹਨ।",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -106,7 +106,7 @@
         {
             "id": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
             "message": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard ਚੱਲ ਰਿਹਾ ਹੈ, ਪਰ UI ਨੂੰ ਸਿਰਫ਼ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਡੈਸਕਟਾਪ ਰਾਹੀਂ ਹੀ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
+            "translation": "HiddenWG ਚੱਲ ਰਿਹਾ ਹੈ, ਪਰ UI ਨੂੰ ਸਿਰਫ਼ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਡੈਸਕਟਾਪ ਰਾਹੀਂ ਹੀ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -122,7 +122,7 @@
         {
             "id": "WireGuard system tray icon did not appear after 30 seconds.",
             "message": "WireGuard system tray icon did not appear after 30 seconds.",
-            "translation": "WireGuard ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ 30 ਸਕਿੰਟਾਂ ਬਾਅਦ ਦਿਖਾਈ ਨਹੀਂ ਦਿੱਤਾ ਹੈ।",
+            "translation": "HiddenWG ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ 30 ਸਕਿੰਟਾਂ ਬਾਅਦ ਦਿਖਾਈ ਨਹੀਂ ਦਿੱਤਾ ਹੈ।",
             "translatorComment": "Copied from source."
         },
         {
@@ -1076,13 +1076,13 @@
         {
             "id": "WireGuard Detection Error",
             "message": "WireGuard Detection Error",
-            "translation": "WireGuard ਖੋਜ ਗ਼ਲਤੀ",
+            "translation": "HiddenWG ਖੋਜ ਗ਼ਲਤੀ",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to wait for WireGuard window to appear: {Err}",
             "message": "Unable to wait for WireGuard window to appear: {Err}",
-            "translation": "WireGuard ਵਿੰਡੋ ਦੇ ਵਿਖਾਈ ਦੇਣ ਦੀ ਉਡੀਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ: {Err}",
+            "translation": "HiddenWG ਵਿੰਡੋ ਦੇ ਵਿਖਾਈ ਦੇਣ ਦੀ ਉਡੀਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1188,10 +1188,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGuard: {TextForStateglobalState_true}",
-            "message": "WireGuard: {TextForStateglobalState_true}",
-            "translation": "ਵਾਇਰਗਾਰਡ: {TextForStateglobalState_true}",
-            "translatorComment": "Copied from source.",
+            "id": "HiddenWG: {TextForStateglobalState_true}",
+            "message": "HiddenWG: {TextForStateglobalState_true}",
+            "translation": "",
             "placeholders": [
                 {
                     "id": "TextForStateglobalState_true",
@@ -1644,31 +1643,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "{Title} (unsigned build, no updates)",
-            "message": "{Title} (unsigned build, no updates)",
-            "translation": "{Title} (ਅਣ-ਦਸਤਖ਼ਤੀ ਬਿਲਡ, ਕੋਈ ਅੱਪਡੇਟ ਨਹੀਂ)",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Title",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "mtw.Title()"
-                }
-            ]
-        },
-        {
             "id": "Error Exiting WireGuard",
             "message": "Error Exiting WireGuard",
-            "translation": "WireGuard ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਗ਼ਲਤੀ",
+            "translation": "HiddenWG ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਗ਼ਲਤੀ",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to exit service due to: {Err}. You may want to stop WireGuard from the service manager.",
             "message": "Unable to exit service due to: {Err}. You may want to stop WireGuard from the service manager.",
-            "translation": "ਸੇਵਾ ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਅਸਮਰੱਥ, ਕਾਰਨ: {Err}। ਤੁਸੀਂ ਸੇਵਾ ਮੈਨੇਜਰ ਤੋਂ WireGuard ਨੂੰ ਰੋਕਣਾ ਚਾਹੋਗੇ।",
+            "translation": "ਸੇਵਾ ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਅਸਮਰੱਥ, ਕਾਰਨ: {Err}। ਤੁਸੀਂ ਸੇਵਾ ਮੈਨੇਜਰ ਤੋਂ HiddenWG ਨੂੰ ਰੋਕਣਾ ਚਾਹੋਗੇ।",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1684,7 +1667,7 @@
         {
             "id": "An update to WireGuard is available. It is highly advisable to update without delay.",
             "message": "An update to WireGuard is available. It is highly advisable to update without delay.",
-            "translation": "WireGuard ਲਈ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ। ਤੁਹਾਨੂੰ ਬਿਨਾਂ ਦੇਰ ਕੀਤਿਆਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਸਲਾਹ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।",
+            "translation": "HiddenWG ਲਈ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ। ਤੁਹਾਨੂੰ ਬਿਨਾਂ ਦੇਰ ਕੀਤਿਆਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਸਲਾਹ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।",
             "translatorComment": "Copied from source."
         },
         {

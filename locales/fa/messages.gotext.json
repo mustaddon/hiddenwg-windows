@@ -68,7 +68,7 @@
         {
             "id": "You must use the native version of WireGuard on this computer.",
             "message": "You must use the native version of WireGuard on this computer.",
-            "translation": "شما باید از نسخه بومی WireGuard در این رایانه استفاده کنید.",
+            "translation": "شما باید از نسخه بومی HiddenWG در این رایانه استفاده کنید.",
             "translatorComment": "Copied from source."
         },
         {
@@ -538,13 +538,13 @@
         {
             "id": "About WireGuard",
             "message": "About WireGuard",
-            "translation": "درباره WireGuard",
+            "translation": "درباره HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "WireGuard logo image",
             "message": "WireGuard logo image",
-            "translation": "تصویر لوگوی WireGuard",
+            "translation": "تصویر لوگوی HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
@@ -1034,7 +1034,7 @@
         {
             "id": "\u0026About WireGuard…",
             "message": "\u0026About WireGuard…",
-            "translation": "\u0026درباره WireGuard…",
+            "translation": "\u0026درباره HiddenWG…",
             "translatorComment": "Copied from source."
         },
         {
@@ -1084,7 +1084,7 @@
         {
             "id": "Unable to wait for WireGuard window to appear: {Err}",
             "message": "Unable to wait for WireGuard window to appear: {Err}",
-            "translation": "نمی‌توان منتظر ماند تا پنجره WireGuard ظاهر شود: {Err}",
+            "translation": "نمی‌توان منتظر ماند تا پنجره HiddenWG ظاهر شود: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1100,7 +1100,7 @@
         {
             "id": "WireGuard: Deactivated",
             "message": "WireGuard: Deactivated",
-            "translation": "WireGuard: غیر فعال شده است",
+            "translation": "HiddenWG: غیر فعال شده است",
             "translatorComment": "Copied from source."
         },
         {
@@ -1142,7 +1142,7 @@
         {
             "id": "WireGuard Activated",
             "message": "WireGuard Activated",
-            "translation": "WireGuard فعال‌ شد",
+            "translation": "HiddenWG فعال‌ شد",
             "translatorComment": "Copied from source."
         },
         {
@@ -1164,7 +1164,7 @@
         {
             "id": "WireGuard Deactivated",
             "message": "WireGuard Deactivated",
-            "translation": "WireGuard غیرفعال شد",
+            "translation": "HiddenWG غیرفعال شد",
             "translatorComment": "Copied from source."
         },
         {
@@ -1186,14 +1186,13 @@
         {
             "id": "WireGuard Tunnel Error",
             "message": "WireGuard Tunnel Error",
-            "translation": "خطای تونل WireGuard",
+            "translation": "خطای تونل HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGuard: {TextForStateglobalState_true}",
-            "message": "WireGuard: {TextForStateglobalState_true}",
-            "translation": "WireGuard: {TextForStateglobalState_true}",
-            "translatorComment": "Copied from source.",
+            "id": "HiddenWG: {TextForStateglobalState_true}",
+            "message": "HiddenWG: {TextForStateglobalState_true}",
+            "translation": "",
             "placeholders": [
                 {
                     "id": "TextForStateglobalState_true",
@@ -1246,13 +1245,13 @@
         {
             "id": "WireGuard Update Available",
             "message": "WireGuard Update Available",
-            "translation": "به‌روزرسانی WireGuard در دسترس است",
+            "translation": "به‌روزرسانی HiddenWG در دسترس است",
             "translatorComment": "Copied from source."
         },
         {
             "id": "An update to WireGuard is now available. You are advised to update as soon as possible.",
             "message": "An update to WireGuard is now available. You are advised to update as soon as possible.",
-            "translation": "به‌روزرسانی WireGuard اکنون در دسترس است. به شما توصیه می‌شود در اسرع وقت به‌روزرسانی کنید.",
+            "translation": "به‌روزرسانی HiddenWG اکنون در دسترس است. به شما توصیه می‌شود در اسرع وقت به‌روزرسانی کنید.",
             "translatorComment": "Copied from source."
         },
         {
@@ -1646,25 +1645,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "{Title} (unsigned build, no updates)",
-            "message": "{Title} (unsigned build, no updates)",
-            "translation": "{Title} (ورژن بی تاییدیه، بروزرسانی موجود نیست)",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Title",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "mtw.Title()"
-                }
-            ]
-        },
-        {
             "id": "Error Exiting WireGuard",
             "message": "Error Exiting WireGuard",
-            "translation": "خطا در هنگام خارج شدن از WireGuard",
+            "translation": "خطا در هنگام خارج شدن از HiddenWG",
             "translatorComment": "Copied from source."
         },
         {

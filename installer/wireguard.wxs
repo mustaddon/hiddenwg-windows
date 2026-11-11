@@ -48,7 +48,7 @@
 		<?endif?>
 
 		<Property Id="ARPPRODUCTICON" Value="wireguard.ico" />
-		<Property Id="ARPURLINFOABOUT" Value="https://www.wireguard.com/" />
+		<Property Id="ARPURLINFOABOUT" Value="https://github.com/mustaddon/hiddenwg/" />
 		<Property Id="ARPNOMODIFY" Value="yes" />
 		<Property Id="DISABLEADVTSHORTCUTS" Value="yes" />
 		<Property Id="DISABLEROLLBACK" Value="yes" />
@@ -81,7 +81,7 @@
 		<ComponentGroup Id="WireGuardComponents">
 			<Component Directory="WireGuardFolder" Id="WireGuardExecutable" Guid="c3508d23-3362-47ce-9220-321bdb1a1acc">
 				<File Source="..\$(var.WIREGUARD_PLATFORM)\wireguard.exe" KeyPath="yes">
-					<Shortcut Id="WireGuardStartMenuShortcut" Directory="ProgramMenuFolder" Name="WireGuard" Description="WireGuard: Fast, Modern, Secure VPN Tunnel" WorkingDirectory="WireGuardFolder" Advertise="yes" />
+					<Shortcut Id="WireGuardStartMenuShortcut" Directory="ProgramMenuFolder" Name="HiddenWG" Description="HiddenWG: Fast, Modern, Secure VPN Tunnel" WorkingDirectory="WireGuardFolder" Advertise="yes" />
 				</File>
 				<ServiceControl Id="DummyService.3AA0C492_29F4_4342_B608_DB95B2DECB13" Name="DummyService.3AA0C492_29F4_4342_B608_DB95B2DECB13" /><!-- A dummy to make WiX create ServiceControl table for us. -->
 			</Component>

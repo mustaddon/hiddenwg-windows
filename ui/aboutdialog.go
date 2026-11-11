@@ -66,7 +66,7 @@ func runAboutDialog(owner walk.Form) error {
 	iv.SetCursor(walk.CursorHand())
 	iv.MouseUp().Attach(func(x, y int, button walk.MouseButton) {
 		if button == walk.LeftButton {
-			win.ShellExecute(showingAboutDialog.Handle(), nil, windows.StringToUTF16Ptr("https://www.wireguard.com/"), nil, nil, win.SW_SHOWNORMAL)
+			win.ShellExecute(showingAboutDialog.Handle(), nil, windows.StringToUTF16Ptr("https://github.com/mustaddon/hiddenwg/"), nil, nil, win.SW_SHOWNORMAL)
 		} else if easterEggIndex >= 0 && button == walk.RightButton {
 			if icon, err := loadSystemIcon("moricons", int32(easterEggIndex), 128); err == nil {
 				iv.SetImage(icon)
@@ -91,7 +91,7 @@ func runAboutDialog(owner walk.Form) error {
 	wgFont, _ := walk.NewFont("Segoe UI", 16, walk.FontBold)
 	wgLbl.SetFont(wgFont)
 	wgLbl.SetTextAlignment(walk.AlignHCenterVNear)
-	wgLbl.SetText("WireGuard")
+	wgLbl.SetText("HiddenWG")
 
 	detailsLbl, err := walk.NewTextLabel(showingAboutDialog)
 	if err != nil {
@@ -107,7 +107,7 @@ func runAboutDialog(owner walk.Form) error {
 	copyrightFont, _ := walk.NewFont("Segoe UI", 7, 0)
 	copyrightLbl.SetFont(copyrightFont)
 	copyrightLbl.SetTextAlignment(walk.AlignHCenterVNear)
-	copyrightLbl.SetText("Copyright © 2015-2026 Jason A. Donenfeld. All Rights Reserved.")
+	copyrightLbl.SetText("Copyright © 2026 Leonid Salavatov. All Rights Reserved.")
 
 	buttonCP, err := walk.NewComposite(showingAboutDialog)
 	if err != nil {
@@ -124,22 +124,22 @@ func runAboutDialog(owner walk.Form) error {
 	closePB.SetAlignment(walk.AlignHCenterVNear)
 	closePB.SetText(l18n.Sprintf("Close"))
 	closePB.Clicked().Attach(showingAboutDialog.Accept)
-	donatePB, err := walk.NewPushButton(buttonCP)
-	if err != nil {
-		return err
-	}
-	donatePB.SetAlignment(walk.AlignHCenterVNear)
-	donatePB.SetText(l18n.Sprintf("♥ &Donate!"))
-	donatePB.Clicked().Attach(func() {
-		if easterEggIndex == -1 {
-			easterEggIndex = 0
-		}
-		win.ShellExecute(showingAboutDialog.Handle(), nil, windows.StringToUTF16Ptr("https://www.wireguard.com/donations/"), nil, nil, win.SW_SHOWNORMAL)
-		showingAboutDialog.Accept()
-	})
+	// donatePB, err := walk.NewPushButton(buttonCP)
+	// if err != nil {
+	// 	return err
+	// }
+	// donatePB.SetAlignment(walk.AlignHCenterVNear)
+	// donatePB.SetText(l18n.Sprintf("♥ &Donate!"))
+	// donatePB.Clicked().Attach(func() {
+	// 	if easterEggIndex == -1 {
+	// 		easterEggIndex = 0
+	// 	}
+	// 	win.ShellExecute(showingAboutDialog.Handle(), nil, windows.StringToUTF16Ptr("https://www.wireguard.com/donations/"), nil, nil, win.SW_SHOWNORMAL)
+	// 	showingAboutDialog.Accept()
+	// })
 	walk.NewHSpacer(buttonCP)
 
-	showingAboutDialog.SetDefaultButton(donatePB)
+	// showingAboutDialog.SetDefaultButton(donatePB)
 	showingAboutDialog.SetCancelButton(closePB)
 
 	disposables.Spare()

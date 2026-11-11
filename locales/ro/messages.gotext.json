@@ -68,7 +68,7 @@
         {
             "id": "You must use the native version of WireGuard on this computer.",
             "message": "You must use the native version of WireGuard on this computer.",
-            "translation": "Pe acest calculator trebuie să utilizezi versiunea nativă a WireGuard.",
+            "translation": "Pe acest calculator trebuie să utilizezi versiunea nativă a HiddenWG.",
             "translatorComment": "Copied from source."
         },
         {
@@ -90,7 +90,7 @@
         {
             "id": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
             "message": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard poate fi utilizat doar de către utilizatorii care sunt membri ai grupului Builtin {AdminGroupName}.",
+            "translation": "HiddenWG poate fi utilizat doar de către utilizatorii care sunt membri ai grupului Builtin {AdminGroupName}.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -106,7 +106,7 @@
         {
             "id": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
             "message": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard rulează, dar interfața cu utilizatorul este accesibilă doar din spațiile de lucru ale grupului Builtin {AdminGroupName}.",
+            "translation": "HiddenWG rulează, dar interfața cu utilizatorul este accesibilă doar din spațiile de lucru ale grupului Builtin {AdminGroupName}.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -122,7 +122,7 @@
         {
             "id": "WireGuard system tray icon did not appear after 30 seconds.",
             "message": "WireGuard system tray icon did not appear after 30 seconds.",
-            "translation": "Pictograma WireGuard din bara de sistem nu a apărut după 30 de secunde.",
+            "translation": "Pictograma HiddenWG din bara de sistem nu a apărut după 30 de secunde.",
             "translatorComment": "Copied from source."
         },
         {
@@ -551,13 +551,13 @@
         {
             "id": "About WireGuard",
             "message": "About WireGuard",
-            "translation": "Despre WireGuard",
+            "translation": "Despre HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "WireGuard logo image",
             "message": "WireGuard logo image",
-            "translation": "Imagine siglă WireGuard",
+            "translation": "Imagine siglă HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
@@ -1047,7 +1047,7 @@
         {
             "id": "\u0026About WireGuard…",
             "message": "\u0026About WireGuard…",
-            "translation": "\u0026Despre WireGuard…",
+            "translation": "\u0026Despre HiddenWG…",
             "translatorComment": "Copied from source."
         },
         {
@@ -1091,13 +1091,13 @@
         {
             "id": "WireGuard Detection Error",
             "message": "WireGuard Detection Error",
-            "translation": "Eroare de detectare WireGuard",
+            "translation": "Eroare de detectare HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to wait for WireGuard window to appear: {Err}",
             "message": "Unable to wait for WireGuard window to appear: {Err}",
-            "translation": "Nu se poate aștepta ca fereastra WireGuard să apară: {Err}",
+            "translation": "Nu se poate aștepta ca fereastra HiddenWG să apară: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1113,7 +1113,7 @@
         {
             "id": "WireGuard: Deactivated",
             "message": "WireGuard: Deactivated",
-            "translation": "WireGuard: dezactivat",
+            "translation": "HiddenWG: dezactivat",
             "translatorComment": "Copied from source."
         },
         {
@@ -1155,7 +1155,7 @@
         {
             "id": "WireGuard Activated",
             "message": "WireGuard Activated",
-            "translation": "WireGuard activat",
+            "translation": "HiddenWG activat",
             "translatorComment": "Copied from source."
         },
         {
@@ -1177,7 +1177,7 @@
         {
             "id": "WireGuard Deactivated",
             "message": "WireGuard Deactivated",
-            "translation": "WireGuard dezactivat",
+            "translation": "HiddenWG dezactivat",
             "translatorComment": "Copied from source."
         },
         {
@@ -1199,14 +1199,13 @@
         {
             "id": "WireGuard Tunnel Error",
             "message": "WireGuard Tunnel Error",
-            "translation": "Eroare de tunel WireGuard",
+            "translation": "Eroare de tunel HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGuard: {TextForStateglobalState_true}",
-            "message": "WireGuard: {TextForStateglobalState_true}",
-            "translation": "WireGuard: {TextForStateglobalState_true}",
-            "translatorComment": "Copied from source.",
+            "id": "HiddenWG: {TextForStateglobalState_true}",
+            "message": "HiddenWG: {TextForStateglobalState_true}",
+            "translation": "",
             "placeholders": [
                 {
                     "id": "TextForStateglobalState_true",
@@ -1259,13 +1258,13 @@
         {
             "id": "WireGuard Update Available",
             "message": "WireGuard Update Available",
-            "translation": "Actualizare disponibilă pentru WireGuard",
+            "translation": "Actualizare disponibilă pentru HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "An update to WireGuard is now available. You are advised to update as soon as possible.",
             "message": "An update to WireGuard is now available. You are advised to update as soon as possible.",
-            "translation": "O actualizare pentru WireGuard este acum disponibilă. Se recomandă efectuarea actualizării cât mai rapid posibil.",
+            "translation": "O actualizare pentru HiddenWG este acum disponibilă. Se recomandă efectuarea actualizării cât mai rapid posibil.",
             "translatorComment": "Copied from source."
         },
         {
@@ -1674,31 +1673,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "{Title} (unsigned build, no updates)",
-            "message": "{Title} (unsigned build, no updates)",
-            "translation": "{Title} (versiune nesemnată, fără actualizări)",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Title",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "mtw.Title()"
-                }
-            ]
-        },
-        {
             "id": "Error Exiting WireGuard",
             "message": "Error Exiting WireGuard",
-            "translation": "Eroare la ieșirea din WireGuard",
+            "translation": "Eroare la ieșirea din HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to exit service due to: {Err}. You may want to stop WireGuard from the service manager.",
             "message": "Unable to exit service due to: {Err}. You may want to stop WireGuard from the service manager.",
-            "translation": "Nu se poate ieși din serviciu din cauza: {Err}. Poți opri WireGuard din managerul de servicii.",
+            "translation": "Nu se poate ieși din serviciu din cauza: {Err}. Poți opri HiddenWG din managerul de servicii.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1714,7 +1697,7 @@
         {
             "id": "An update to WireGuard is available. It is highly advisable to update without delay.",
             "message": "An update to WireGuard is available. It is highly advisable to update without delay.",
-            "translation": "Este disponibilă o actualizare pentru WireGuard. Se recomandă ferm actualizarea imediată.",
+            "translation": "Este disponibilă o actualizare pentru HiddenWG. Se recomandă ferm actualizarea imediată.",
             "translatorComment": "Copied from source."
         },
         {

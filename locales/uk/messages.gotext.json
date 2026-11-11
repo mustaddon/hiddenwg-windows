@@ -68,7 +68,7 @@
         {
             "id": "You must use the native version of WireGuard on this computer.",
             "message": "You must use the native version of WireGuard on this computer.",
-            "translation": "Ви повинні використовувати рідну версію WireGuard на цьому комп'ютері.",
+            "translation": "Ви повинні використовувати рідну версію HiddenWG на цьому комп'ютері.",
             "translatorComment": "Copied from source."
         },
         {
@@ -90,7 +90,7 @@
         {
             "id": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
             "message": "WireGuard may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard може бути використаний тільки користувачами, які є членами вбудованих {AdminGroupName} груп.",
+            "translation": "HiddenWG може бути використаний тільки користувачами, які є членами вбудованих {AdminGroupName} груп.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -106,7 +106,7 @@
         {
             "id": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
             "message": "WireGuard is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "WireGuard запущено, але UI доступний лише з комп\"ютерів вбудованої {AdminGroupName} групи.",
+            "translation": "HiddenWG запущено, але UI доступний лише з комп\"ютерів вбудованої {AdminGroupName} групи.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -122,7 +122,7 @@
         {
             "id": "WireGuard system tray icon did not appear after 30 seconds.",
             "message": "WireGuard system tray icon did not appear after 30 seconds.",
-            "translation": "Значок системи WireGuard не з'явився через 30 секунд.",
+            "translation": "Значок системи HiddenWG не з'явився через 30 секунд.",
             "translatorComment": "Copied from source."
         },
         {
@@ -566,13 +566,13 @@
         {
             "id": "About WireGuard",
             "message": "About WireGuard",
-            "translation": "Про WireGuard",
+            "translation": "Про HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "WireGuard logo image",
             "message": "WireGuard logo image",
-            "translation": "Зображення логотипу WireGuard",
+            "translation": "Зображення логотипу HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
@@ -1062,7 +1062,7 @@
         {
             "id": "\u0026About WireGuard…",
             "message": "\u0026About WireGuard…",
-            "translation": "\u0026Про WireGuard…",
+            "translation": "\u0026Про HiddenWG…",
             "translatorComment": "Copied from source."
         },
         {
@@ -1106,13 +1106,13 @@
         {
             "id": "WireGuard Detection Error",
             "message": "WireGuard Detection Error",
-            "translation": "Помилка виявлення WireGuard",
+            "translation": "Помилка виявлення HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "Unable to wait for WireGuard window to appear: {Err}",
             "message": "Unable to wait for WireGuard window to appear: {Err}",
-            "translation": "Не вдалося дочекатися появи вікна WireGuard: {Err}",
+            "translation": "Не вдалося дочекатися появи вікна HiddenWG: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1128,7 +1128,7 @@
         {
             "id": "WireGuard: Deactivated",
             "message": "WireGuard: Deactivated",
-            "translation": "WireGuard: Вимкнений",
+            "translation": "HiddenWG: Вимкнений",
             "translatorComment": "Copied from source."
         },
         {
@@ -1170,7 +1170,7 @@
         {
             "id": "WireGuard Activated",
             "message": "WireGuard Activated",
-            "translation": "WireGuard активовано",
+            "translation": "HiddenWG активовано",
             "translatorComment": "Copied from source."
         },
         {
@@ -1192,7 +1192,7 @@
         {
             "id": "WireGuard Deactivated",
             "message": "WireGuard Deactivated",
-            "translation": "WireGuard деактивовано",
+            "translation": "HiddenWG деактивовано",
             "translatorComment": "Copied from source."
         },
         {
@@ -1214,14 +1214,13 @@
         {
             "id": "WireGuard Tunnel Error",
             "message": "WireGuard Tunnel Error",
-            "translation": "Помилка тунелю WireGuard",
+            "translation": "Помилка тунелю HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGuard: {TextForStateglobalState_true}",
-            "message": "WireGuard: {TextForStateglobalState_true}",
-            "translation": "WireGuard: {TextForStateglobalState_true}",
-            "translatorComment": "Copied from source.",
+            "id": "HiddenWG: {TextForStateglobalState_true}",
+            "message": "HiddenWG: {TextForStateglobalState_true}",
+            "translation": "",
             "placeholders": [
                 {
                     "id": "TextForStateglobalState_true",
@@ -1274,13 +1273,13 @@
         {
             "id": "WireGuard Update Available",
             "message": "WireGuard Update Available",
-            "translation": "Доступне оновлення WireGuard",
+            "translation": "Доступне оновлення HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
             "id": "An update to WireGuard is now available. You are advised to update as soon as possible.",
             "message": "An update to WireGuard is now available. You are advised to update as soon as possible.",
-            "translation": "Оновлення до WireGuard доступне. Рекомендуємо оновити якомога швидше.",
+            "translation": "Оновлення до HiddenWG доступне. Рекомендуємо оновити якомога швидше.",
             "translatorComment": "Copied from source."
         },
         {
@@ -1704,25 +1703,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "{Title} (unsigned build, no updates)",
-            "message": "{Title} (unsigned build, no updates)",
-            "translation": "{Title} (непідписані збірки, немає оновлень)",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Title",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "mtw.Title()"
-                }
-            ]
-        },
-        {
             "id": "Error Exiting WireGuard",
             "message": "Error Exiting WireGuard",
-            "translation": "Помилка при виході з WireGuard",
+            "translation": "Помилка при виході з HiddenWG",
             "translatorComment": "Copied from source."
         },
         {
@@ -1744,7 +1727,7 @@
         {
             "id": "An update to WireGuard is available. It is highly advisable to update without delay.",
             "message": "An update to WireGuard is available. It is highly advisable to update without delay.",
-            "translation": "Доступне оновлення WireGuard, доцільне оновлення без затримок.",
+            "translation": "Доступне оновлення HiddenWG, доцільне оновлення без затримок.",
             "translatorComment": "Copied from source."
         },
         {
