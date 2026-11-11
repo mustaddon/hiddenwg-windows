@@ -79,8 +79,8 @@
 			Components
 		-->
 		<ComponentGroup Id="WireGuardComponents">
-			<Component Directory="WireGuardFolder" Id="WireGuardExecutable" Guid="c3508d23-3362-47ce-9220-321bdb1a1acc">
-				<File Source="..\$(var.WIREGUARD_PLATFORM)\wireguard.exe" KeyPath="yes">
+			<Component Directory="WireGuardFolder" Id="WireGuardExecutable" Guid="e1d519c0-95dc-4e51-9cca-659b4b2be650">
+				<File Id="WireGuardExecutableFile" Source="..\$(var.WIREGUARD_PLATFORM)\wireguard.exe" Name="hiddenwg.exe" KeyPath="yes">
 					<Shortcut Id="WireGuardStartMenuShortcut" Directory="ProgramMenuFolder" Name="HiddenWG" Description="HiddenWG: Fast, Modern, Secure VPN Tunnel" WorkingDirectory="WireGuardFolder" Advertise="yes" />
 				</File>
 				<ServiceControl Id="DummyService.3AA0C492_29F4_4342_B608_DB95B2DECB13" Name="DummyService.3AA0C492_29F4_4342_B608_DB95B2DECB13" /><!-- A dummy to make WiX create ServiceControl table for us. -->
@@ -147,7 +147,7 @@
 		</InstallExecuteSequence>
 
 		<!--
-			Launch wireguard.exe on product reconfiguration (starting same MSI again)
+			Launch hiddenwg.exe on product reconfiguration (starting same MSI again)
 		-->
 		<CustomAction Id="LaunchApplicationAndAbort" BinaryKey="customactions.dll" DllEntry="LaunchApplicationAndAbort" />
 		<InstallExecuteSequence>
@@ -187,9 +187,9 @@
 		</InstallExecuteSequence>
 
 		<!--
-			Launch wireguard.exe after setup complete
+			Launch hiddenwg.exe after setup complete
 		-->
-		<CustomAction Id="LaunchApplication" HideTarget="yes" Impersonate="no" Execute="deferred" FileKey="wireguard.exe" ExeCommand="" Return="asyncNoWait" />
+		<CustomAction Id="LaunchApplication" HideTarget="yes" Impersonate="no" Execute="deferred" FileKey="WireGuardExecutableFile" ExeCommand="" Return="asyncNoWait" />
 		<InstallExecuteSequence>
 			<Custom Action="LaunchApplication" Before="InstallFinalize">(&amp;WireGuardFeature = 3) AND NOT DO_NOT_LAUNCH</Custom>
 		</InstallExecuteSequence>

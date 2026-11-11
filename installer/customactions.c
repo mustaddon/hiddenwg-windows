@@ -300,10 +300,10 @@ __declspec(dllexport) UINT __stdcall LaunchApplicationAndAbort(MSIHANDLE install
 		log_errorf(installer, LOG_LEVEL_WARN, ret, TEXT("MsiGetProperty(\"WireGuardFolder\") failed"));
 		goto out;
 	}
-	if (!path[0] || !PathAppend(path, TEXT("wireguard.exe")))
+	if (!path[0] || !PathAppend(path, TEXT("hiddenwg.exe")))
 		goto out;
 	log_messagef(installer, LOG_LEVEL_INFO, TEXT("Launching %1"), path);
-	if (!CreateProcess(path, TEXT("wireguard"), NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi)) {
+	if (!CreateProcess(path, TEXT("hiddenwg"), NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi)) {
 		log_errorf(installer, LOG_LEVEL_WARN, GetLastError(), TEXT("Failed to create \"%1\" process"), path);
 		goto out;
 	}
@@ -414,9 +414,9 @@ __declspec(dllexport) UINT __stdcall KillWireGuardProcesses(MSIHANDLE installer)
 {
 	HANDLE snapshot, process;
 	PROCESSENTRY32 entry = { .dwSize = sizeof(PROCESSENTRY32) };
-	TCHAR process_path[MAX_PATH], executables[2][MAX_PATH];
+	TCHAR process_path[MAX_PATH], executables[3][MAX_PATH];
 	DWORD process_path_len = _countof(process_path), tries = 0;
-	struct file_id file_ids[2], file_id;
+	struct file_id file_ids[3], file_id;
 	size_t file_ids_len = 0;
 	bool is_com_initialized = SUCCEEDED(CoInitialize(NULL));
 	LSTATUS mret;
@@ -430,9 +430,10 @@ __declspec(dllexport) UINT __stdcall KillWireGuardProcesses(MSIHANDLE installer)
 		goto out;
 
 	if (!PathCombine(executables[0], process_path, TEXT("wg.exe")) ||
-	    !PathCombine(executables[1], process_path, TEXT("wireguard.exe")))
+	    !PathCombine(executables[1], process_path, TEXT("wireguard.exe")) ||
+	    !PathCombine(executables[2], process_path, TEXT("hiddenwg.exe")))
 		goto out;
-	if (can_be_deleted(executables[0]) && can_be_deleted(executables[1]))
+	if (can_be_deleted(executables[0]) && can_be_deleted(executables[1]) && can_be_deleted(executables[2]))
 		goto out;
 
 	log_messagef(installer, LOG_LEVEL_INFO, TEXT("Detecting running processes"));
@@ -450,7 +451,9 @@ retry:
 	if (snapshot == INVALID_HANDLE_VALUE)
 		goto out;
 	for (bool ret = Process32First(snapshot, &entry); ret; ret = Process32Next(snapshot, &entry)) {
-		if (_tcsicmp(entry.szExeFile, TEXT("wireguard.exe")) && _tcsicmp(entry.szExeFile, TEXT("wg.exe")))
+		if (_tcsicmp(entry.szExeFile, TEXT("hiddenwg.exe")) &&
+		    _tcsicmp(entry.szExeFile, TEXT("wireguard.exe")) &&
+		    _tcsicmp(entry.szExeFile, TEXT("wg.exe")))
 			continue;
 		process = OpenProcess(PROCESS_TERMINATE | PROCESS_QUERY_LIMITED_INFORMATION, false, entry.th32ProcessID);
 		if (!process) {
@@ -605,7 +608,7 @@ __declspec(dllexport) UINT __stdcall RemoveAdapters(MSIHANDLE installer)
 		log_errorf(installer, LOG_LEVEL_WARN, ret, TEXT("MsiGetProperty(\"CustomActionData\") failed"));
 		goto out;
 	}
-	if (!path[0] || !PathAppend(path, TEXT("wireguard.exe")))
+	if (!path[0] || !PathAppend(path, TEXT("hiddenwg.exe")))
 		goto out;
 
 	if (!CreatePipe(&pipe, &si.hStdOutput, NULL, 0)) {
