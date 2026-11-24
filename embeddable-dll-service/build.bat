@@ -28,7 +28,7 @@ if exist ..\.deps\prepared goto :build
 	if "%SigningProvider%"=="" goto :success
 	if "%TimestampServer%"=="" goto :success
 	echo [+] Signing
-	signtool sign %SigningProvider% /fd sha256 /tr "%TimestampServer%" /td sha256 /d "WireGuard Tunnel" x86\tunnel.dll amd64\tunnel.dll arm64\tunnel.dll || goto :error
+	signtool sign %SigningProvider% /fd sha256 /tr "%TimestampServer%" /td sha256 /d "HiddenWG Tunnel" x86\tunnel.dll amd64\tunnel.dll arm64\tunnel.dll || goto :error
 
 :success
 	echo [+] Success
